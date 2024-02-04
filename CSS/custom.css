@@ -7,6 +7,7 @@
     --headerColor: #08090A;
     --bodyTextColor: #F4F7F5;
     --bodyTextColorWhite: #F4F7F5;
+    --white: #fff;
     --magpieBlue: #0012B7;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -369,7 +370,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 /* Navigation */
 .navigation-header {
-    background-color: var(--secondary);
+    background-color: var(--white);
     padding: 0 15px;
     height: 60px;
     display: flex;
@@ -426,7 +427,7 @@ h1,h2,h3,h4,h5,h6 {
       position: absolute;
       right: 0;
       top: 60px;
-      background-color: var(--magpieBlue);
+      background-color: var(--white);
       width: 100%;
       height: auto;
       padding-top: 9%;
@@ -435,6 +436,6 @@ h1,h2,h3,h4,h5,h6 {
       z-index: 999999;
     }
     .navigation-items > a {
-        color: var(--secondary);
+        color: var(--headerColor);
     }
   }
