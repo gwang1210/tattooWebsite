@@ -7,21 +7,48 @@
     <meta name="description" content="Magpie Ink Studio Chicago Fine Line Tattoo By Appointment Only"/>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Magpie Ink Studio Tattoos By Appointment Only in Chicago</title>
-
-    <!-- Bootstrap -->
-    <!-- <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet"> -->
-
     <link rel="stylesheet" type="text/css" href="CSS/custom.css" media="screen">
+    <!-- <script src="script.js"></script> -->
     <!-- <link rel="stylesheet" href="css/slideshow.css"> -->
     </head>
     <body>
         <!-- ============================================ -->
+        <!--                    Navigation                -->
+        <!-- ============================================ -->
+        <header class="navigation-header">
+            <nav>
+                <div class="logo-container">
+                    <a href="./index.html"><img src="Images/logotypeBlack.svg"></a>
+                </div>
+                <div class="navigation-items" id="navigation-items">
+                    <a href="">Home</a>
+                    <a href="">Artists</a>
+                    <a href="">Inquiries</a>
+                </div>
+                <div class="hamburger">
+                    <span id="openHam">&#9776;</span>
+                    <span id="closeHam">&#x2716;</span>
+                </div>
+            </nav>
+        </header>
+        <script>
+            let openHam = document.querySelector('#openHam');
+            let closeHam = document.querySelector('#closeHam');
+            let navigationItems = document.querySelector('#navigation-items');
+
+            const hamburgerEvent = (navigation, close, open) => {
+                navigationItems.style.display = navigation;
+                closeHam.style.display = close;
+                openHam.style.display = open;
+            };
+
+            openHam.addEventListener('click', () => hamburgerEvent("flex", "block", "none"));
+            closeHam.addEventListener('click', () => hamburgerEvent("none", "none", "block"));
+
+        </script>
+        <!-- ============================================ -->
         <!--                    Hero                      -->
         <!-- ============================================ -->
-        <nav>
-            <p>Nav goes here</p>
-        </nav>
         <section id="hero-82">
             <div class="cs-container">
                 <h1 class="cs-title">Magpie</h1>
@@ -39,12 +66,74 @@
                 <img loading="lazy" decoding="async" src="Images/magpie.JPG" alt="Magpie Chicago Tattoo Studio" width="2250" height="1500" aria-hidden="true">
             </picture>
         </section>
+
+
+
+
+
         <!-- ============================================ -->
-        <!--                    Footer                    -->
+        <!--                   Footer                     -->
         <!-- ============================================ -->
-        <footer>
-            <p>&copy; 2024 Magpie Ink Studio</p>
-            <p>1913 N Milwaukee Ave, Chicago, IL</p>
+
+        <footer id="cs-footer-269">
+            <div class="cs-container">
+                <!-- Logo Group -->
+                <div class="cs-logo-group">
+                    <a aria-label="go back to home" class="cs-logo" href="">
+                        <img class="cs-logo-img light" aria-hidden="true" loading="lazy" decoding="async" src="Images/monogramWhite.svg" alt="logo" width="60" height="60">
+                    </a>
+                    <p class="cs-text">
+                        &copy; 2024 Magpie Ink Studio
+                    </p>
+                </div>
+                <!-- Links -->
+                <ul class="cs-nav">
+                    <li class="cs-nav-li">
+                        <span class="cs-header">Sitemap</span>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="">Home</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="">Artists</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="">Inquiries</a>
+                    </li>
+                    <!-- <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="">Portfolio</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="">Contact</a>
+                    </li> -->
+                </ul>
+                <!-- Contact Info -->
+                <ul class="cs-contact">
+                    <li class="cs-nav-li">
+                        <span class="cs-header">Address</span>
+                    </li>
+                    <li class="cs-contact-li">
+                        <a class="cs-contact-link" href="tel: 123-456-7890">1913 N Milwaukee Ave <br> Chicago, IL</a>
+                    </li>
+                    <li class="cs-contact-li">
+                        <a class="cs-contact-link" href="mailto:info@codestitch.com"></a>
+                    </li>
+                    <!-- Social Media -->
+                    <li class="cs-contact-li cs-social-group">
+                        <div class="cs-social">
+                            <!-- <a class="cs-social-link" aria-label="visit google profile" href="">
+                                <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
+                            </a>
+                            <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                                <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
+                            </a> -->
+                            <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                                <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>
