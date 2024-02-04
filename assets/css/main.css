@@ -4,10 +4,10 @@
 /* Load custom font */
 @font-face {
 	font-family: 'Ogg';
-	src: url('../../tattoowebsite/Ogg Ogg-light.eot'), /* IE9 Compat Modes */
-		 url('../../tattoowebsite/Ogg Ogg-light.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('../../tattoowebsite/Ogg Ogg-light.woff') format('woff'), /* Pretty Modern Browsers */
-		 url('../../tattoowebsite/Ogg Ogg-light.ttf')  format('truetype'), /* Safari, Android, iOS */
+	src: url('../tattoowebsite/Ogg Ogg-light.eot'), /* IE9 Compat Modes */
+		 url('../tattoowebsite/Ogg Ogg-light.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../tattoowebsite/Ogg Ogg-light.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('../tattoowebsite/Ogg Ogg-light.ttf')  format('truetype'), /* Safari, Android, iOS */
   }
 
 /*
