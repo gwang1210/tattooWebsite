@@ -1,6 +1,15 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
+/* Load custom font */
+@font-face {
+	font-family: 'Ogg';
+	src: url('../../tattoowebsite/Ogg Ogg-light.eot'), /* IE9 Compat Modes */
+		 url('../../tattoowebsite/Ogg Ogg-light.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../../tattoowebsite/Ogg Ogg-light.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('../../tattoowebsite/Ogg Ogg-light.ttf')  format('truetype'), /* Safari, Android, iOS */
+  }
+
 /*
 	Massively by HTML5 UP
 	html5up.net | @ajlkn
@@ -181,7 +190,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Ogg";
 		font-weight: 900;
 		line-height: 1.5;
 		letter-spacing: 0.075em;
