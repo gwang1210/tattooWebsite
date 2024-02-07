@@ -193,7 +193,7 @@ h1,h2,h3,h4,h5,h6 {
 @media only screen and (min-width: 0rem) {
     #cs-footer-269 {
         /* 60px - 100px top and bottom */
-        padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+        padding: clamp(2.75rem, 4vw, 6.25rem) 1rem;
         background-color: var(--primary);
         /* Navigation Links */
         /* Contact Links */
@@ -372,19 +372,24 @@ h1,h2,h3,h4,h5,h6 {
 .navigation-header {
     background-color: var(--white);
     padding: 0 15px;
-    height: 60px;
+    height: 68.5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: var(--headerColor);
   }
 
   nav {
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
+    padding: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 9999;
+    background-color: var(--white);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
   }
   .logo-container > a {
     color: var(--headerColor);
@@ -395,6 +400,7 @@ h1,h2,h3,h4,h5,h6 {
   .navigation-items {
     display: flex;
     gap: 40px;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
   }
   .navigation-items > a {
     color: var(--headerColor);
@@ -405,6 +411,7 @@ h1,h2,h3,h4,h5,h6 {
   }
   .navigation-items > a:hover {
     color: var(--headerColor);
+    text-decoration: var(--magpieBlue) underline;
   }
   .hamburger {
     display: none;
