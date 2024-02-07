@@ -15,37 +15,9 @@
         <!-- ============================================ -->
         <!--                    Navigation                -->
         <!-- ============================================ -->
-        <header class="navigation-header">
-            <nav>
-                <div class="logo-container">
-                    <a href="./index.html"><img src="Images/logotypeBlack.svg"></a>
-                </div>
-                <div class="navigation-items" id="navigation-items">
-                    <a href="">Home</a>
-                    <a href="">Artists</a>
-                    <a href="">Inquiries</a>
-                </div>
-                <div class="hamburger">
-                    <span id="openHam">&#9776;</span>
-                    <span id="closeHam">&#x2716;</span>
-                </div>
-            </nav>
-        </header>
-        <script>
-            let openHam = document.querySelector('#openHam');
-            let closeHam = document.querySelector('#closeHam');
-            let navigationItems = document.querySelector('#navigation-items');
 
-            const hamburgerEvent = (navigation, close, open) => {
-                navigationItems.style.display = navigation;
-                closeHam.style.display = close;
-                openHam.style.display = open;
-            };
 
-            openHam.addEventListener('click', () => hamburgerEvent("flex", "block", "none"));
-            closeHam.addEventListener('click', () => hamburgerEvent("none", "none", "block"));
 
-        </script>
         <!-- ============================================ -->
         <!--                    Hero                      -->
         <!-- ============================================ -->
