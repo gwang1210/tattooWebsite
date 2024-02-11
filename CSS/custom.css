@@ -10,7 +10,7 @@
     /* --bodyTextColor: #F4F7F5;
     --bodyTextColorWhite: #F4F7F5; */
     --bodyTextColor: var(--primary);
-    --bodyTextColorWhite: var(--primary);
+    --bodyTextColorWhite: var(--secondaryLight);
     --footerColor: var:var(--secondary)
     --white: #fff;
     --magpieBlue: #0012B7;
@@ -358,7 +358,7 @@ h1,h2,h3,h4,h5,h6 {
         text-align: center;
         max-width: 51.8125rem;
         /* 16px - 24px */
-        margin: 0 auto clamp(1rem, 4vw, 1.5rem);
+        margin: 0 auto clamp(1rem, 4vw, 3rem);
         color: #fff;
         position: relative;
     }
@@ -1034,13 +1034,21 @@ h1,h2,h3,h4,h5,h6 {
       margin: 0;
       color: var(--bodyTextColor);
   }
-  #cs-contact-549 .cs-background {
+  #map .cs-background {
       width: 66.5rem;
+      max-width: 100%;
       height: 19.5rem;
       display: block;
       position: relative;
   }
-  #cs-contact-549 .cs-background:before {
+
+  #map .cs-container {
+    width: 100%;
+    max-width: 67.5rem;
+    margin: auto;
+
+  }
+  #map .cs-background:before {
       /* yellow dot */
       content: "";
       width: 1.125rem;
@@ -1055,7 +1063,7 @@ h1,h2,h3,h4,h5,h6 {
       transform: translate(-50%, -50%);
       z-index: 10;
   }
-  #cs-contact-549 .cs-background:after {
+  #map .cs-background:after {
       /* yellow animated ring */
       content: "";
       width: 1.125rem;
@@ -1079,13 +1087,19 @@ h1,h2,h3,h4,h5,h6 {
       animation-fill-mode: forwards;
       animation-iteration-count: infinite;
   }
-  #cs-contact-549 .cs-background img {
+  #map .cs-background img {
       position: absolute;
       top: 0;
       left: 0;
       height: 100%;
       width: 100%;
       object-fit: cover;
+  }
+  @media only screen and (min-width: 48rem) {
+    #map .cs-background {
+        /* 310px - 568px */
+        height: clamp(19.375rem, 43vw, 35.5rem);
+    }
   }
   #cs-contact-549 .cs-form {
       width: 100%;
@@ -1166,20 +1180,20 @@ h1,h2,h3,h4,h5,h6 {
       text-align: center;
       /* 28px - 44px, minus the gap value. Should be 48px - 64px, but with a 20px gap on the flexbox, we account for that space when adding our margin top value so its 48px - 64px */
       margin: clamp(1.75rem, 6vw, 2.75rem) auto 0;
-      color: #1a1a1a;
+      color: var(--bodyTextColorWhite);
       border: none;
       /* 150px - 234px */
       /* min-width: clamp(9.374rem, 18vw, 14.625rem); */
       width: 90px;
       padding: 0 1.5rem;
-      background-color: var(--primaryLight);
-      border-radius: 3rem;
+      background-color: var(--magpieBlue);
+      border-radius: 50%;
       display: inline-block;
       position: relative;
       z-index: 1;
       /* prevents padding from adding to the width */
       box-sizing: border-box;
-      transition: color 0.3s;
+      transition: color 2s;
   }
   #cs-contact-549 .cs-submit:before {
       content: "";
@@ -1191,11 +1205,11 @@ h1,h2,h3,h4,h5,h6 {
       top: 0;
       left: 0;
       z-index: -1;
-      border-radius: 3rem;
-      transition: width 0.3s;
+      border-radius: 50%;
+      /* transition: 0.3s; */
   }
   #cs-contact-549 .cs-submit:hover {
-      color: #fff;
+      color: var(--primaryLight);
       cursor: pointer;
   }
   #cs-contact-549 .cs-submit:hover:before {
@@ -1204,10 +1218,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #cs-contact-549 .cs-background {
-      /* 310px - 568px */
-      height: clamp(19.375rem, 43vw, 35.5rem);
-  }
   #cs-contact-549 .cs-form {
       flex-direction: row;
       flex-wrap: wrap;

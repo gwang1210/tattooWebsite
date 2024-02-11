@@ -36,17 +36,17 @@
                     <div class="cs-ul-wrapper">
                         <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
                             <li class="cs-li">
-                                <a href="" class="cs-li-link cs-active">
+                                <a href="" class="cs-li-link cs-dropdown cs-active">
                                     Home
                                 </a>
                             </li>
                             <li class="cs-li">
-                                <a href="#artists" class="cs-li-link">
+                                <a href="#artists" class="cs-li-link cs-dropdown">
                                     Artists
                                 </a>
                             </li>
                             <li class="cs-li">
-                                <a href="#cs-contact-549" class="cs-li-link">
+                                <a href="#cs-contact-549" class="cs-li-link cs-dropdown">
                                     Inquiries
                                 </a>
                             </li>
@@ -97,7 +97,17 @@
             const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropdown'));
             for (const item of dropDowns) {
                 const onClick = () => {
+                    const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-active'));
+                    for (const itemB of dropDowns) {
+                        itemB.classList.toggle('cs-active');
+                        console.log("test");
+                    }
                     item.classList.toggle('cs-active');
+                    CShamburgerMenu.classList.toggle('cs-active');
+                    CSnavbarMenu.classList.toggle('cs-active');
+                    CSbody.classList.toggle('cs-open');
+                    // run the function to check the aria-expanded value
+                    ariaExpanded();
                 };
                 item.addEventListener('click', onClick);
             }
@@ -217,6 +227,19 @@
             </div>
         </section>
 
+        <section id="map">
+            <div class="cs-container">
+                <!-- <picture class="cs-background">
+                    Mobile Image
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/generic-map.png">
+                    Tablet and above Image
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/generic-map.png">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/generic-map.png" alt="appliance" width="1280" height="568" aria-hidden="true">
+                </picture> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11875.619480787205!2d-87.6863431!3d41.9164037!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd32dfc444283%3A0x9a2179e627fe1157!2sMagpie%20Ink%20Studio!5e0!3m2!1sen!2sus!4v1707689263324!5m2!1sen!2sus"
+                class= "cs-background" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
         <!-- ============================================ -->
         <!--                 Contact Form                 -->
         <!-- ============================================ -->
@@ -233,7 +256,7 @@
                 </div>
 
                 <!--Form-->
-                <form class="cs-form" id="cs-form-549" name="Contact Form" method="post">
+                <form class="cs-form" id="cs-form-549" name="Contact Form" method="post" action="https://formspree.io/f/mpzvdzzw">
                     <label class="cs-label">
                         Name
                         <input class="cs-input" required type="text" id="name-549" name="name" placeholder="Name">
