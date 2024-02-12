@@ -20,6 +20,7 @@
     --headerFontSize: clamp(2.5rem, 3.9vw, 3.0625rem);
     --subHeaderFontSize: clamp(2rem, 2.2vw, 3rem);
     --bodyFontSize: 1.25rem;
+    --bodyFontSizeSmall: 1rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(10rem, 10vw, 12.25rem) 1rem clamp(1rem, 4vw, 6rem) 1rem;
 }
@@ -489,7 +490,7 @@ h1,h2,h3,h4,h5,h6 {
     }
     #cs-footer-269 .cs-text {
         /* 14px - 16px */
-        font-size: clamp(0.875rem, 2.5vw, 1rem);
+        font-size: var(--bodyFontSizeSmall);
         line-height: 1.5em;
         margin: 0;
         margin-bottom: 2rem;
@@ -558,7 +559,7 @@ h1,h2,h3,h4,h5,h6 {
         margin-bottom: 0;
     }
     #cs-footer-269 .cs-contact-link {
-        font-size: 1rem;
+        font-size: var(--bodyFontSizeSmall);
         text-decoration: none;
         line-height: 1.5em;
         text-align: left;
