@@ -1214,7 +1214,7 @@ h1,h2,h3,h4,h5,h6 {
       /* font-weight: 700; */
       text-align: center;
       /* 28px - 44px, minus the gap value. Should be 48px - 64px, but with a 20px gap on the flexbox, we account for that space when adding our margin top value so its 48px - 64px */
-      margin: clamp(1.75rem, 6vw, 2.75rem) auto 0;
+      margin: clamp(1.75rem, 6vw, 2.75rem) auto;
       color: var(--bodyTextColorWhite);
       border: none;
       /* 150px - 234px */
