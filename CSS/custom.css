@@ -17,8 +17,8 @@
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
-    --headerFontSize: clamp(2rem, 3.9vw, 3.0625rem);
-    --subHeaderFontSize: clamp(1.5rem, 2.2vw, 3rem);
+    --headerFontSize: clamp(2.5rem, 3.9vw, 3.0625rem);
+    --subHeaderFontSize: clamp(2rem, 2.2vw, 3rem);
     --bodyFontSize: 1.25rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(10rem, 10vw, 12.25rem) 1rem clamp(1rem, 4vw, 6rem) 1rem;
@@ -398,7 +398,7 @@ h1,h2,h3,h4,h5,h6 {
     }
     #home .cs-text {
         /* 16px - 25px */
-        font-size: clamp(1.4rem, 4vw, 3rem);
+        font-size: clamp(1.55rem, 4vw, 3rem);
         line-height: 1.5em;
         text-align: center;
         width: 100%;
