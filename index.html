@@ -46,7 +46,7 @@
                     <div class="cs-ul-wrapper">
                         <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
                             <li class="cs-li">
-                                <a href="#home" class="cs-li-link cs-dropdown cs-active">
+                                <a href="#home" class="cs-li-link cs-dropdown">
                                     Home
                                 </a>
                             </li>
@@ -104,23 +104,24 @@
             }
 
             // mobile nav toggle code
-            const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropdown'));
-            for (const item of dropDowns) {
-                const onClick = () => {
-                    const dropDowns2 = Array.from(document.querySelectorAll('#cs-navigation .cs-active'));
-                    for (const itemB of dropDowns2) {
-                        itemB.classList.toggle('cs-active');
-                        console.log("test");
-                    }
-                    // item.classList.toggle('cs-active');
-                    // CShamburgerMenu.classList.toggle('cs-active');
-                    CSnavbarMenu.classList.toggle('cs-active');
-                    CSbody.classList.toggle('cs-open');
-                    // // run the function to check the aria-expanded value
-                    ariaExpanded();
-                };
-                item.addEventListener('click', onClick);
-            }
+            // const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropdown'));
+            // for (const item of dropDowns) {
+            //     const onClick = () => {
+            //         const dropDowns2 = Array.from(document.querySelectorAll('#cs-navigation .cs-active'));
+            //         for (const itemB of dropDowns2) {
+            //             itemB.classList.toggle('cs-active');
+            //             console.log("test");
+            //         }
+            //         // item.classList.toggle('cs-active');
+            //         // CShamburgerMenu.classList.toggle('cs-active');
+            //         CSnavbarMenu.classList.toggle('cs-active');
+            //         CSbody.classList.toggle('cs-open');
+            //         item.classList.toggle('cs-active');
+            //         // // run the function to check the aria-expanded value
+            //         ariaExpanded();
+            //     };
+            //     item.addEventListener('click', onClick);
+            // }
         </script>
 
 
