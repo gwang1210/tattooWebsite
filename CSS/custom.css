@@ -336,7 +336,7 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #hero-82 {
+    #home {
         /* Centers button */
         text-align: center;
         /* 144px - 300px - leaving extra space for the navigation */
@@ -347,7 +347,7 @@ h1,h2,h3,h4,h5,h6 {
         z-index: 1;
         height: 100vh;
     }
-    #hero-82 .cs-background {
+    #home .cs-background {
         width: 100%;
         height: 100%;
         display: block;
@@ -356,7 +356,7 @@ h1,h2,h3,h4,h5,h6 {
         left: 0;
         z-index: -2;
     }
-    #hero-82 .cs-background:before {
+    #home .cs-background:before {
         /* Overlay */
         content: "";
         width: 100%;
@@ -371,7 +371,7 @@ h1,h2,h3,h4,h5,h6 {
         /* prevents the cursor from interacting with it */
         pointer-events: none;
     }
-    #hero-82 .cs-background img {
+    #home .cs-background img {
         position: absolute;
         top: 0;
         left: 0;
@@ -379,12 +379,12 @@ h1,h2,h3,h4,h5,h6 {
         width: 100%;
         object-fit: cover;
     }
-    #hero-82 .cs-container {
+    #home .cs-container {
         width: 100%;
         max-width: 67.5rem;
         margin: auto;
     }
-    #hero-82 .cs-title {
+    #home .cs-title {
         /* 39px - 61px */
         font-size: clamp(5rem, 12vw, 10.8125rem);
         /* font-weight: 700; */
@@ -396,7 +396,7 @@ h1,h2,h3,h4,h5,h6 {
         color: #fff;
         position: relative;
     }
-    #hero-82 .cs-text {
+    #home .cs-text {
         /* 16px - 25px */
         font-size: clamp(1.4rem, 4vw, 3rem);
         line-height: 1.5em;
@@ -409,7 +409,7 @@ h1,h2,h3,h4,h5,h6 {
         margin-bottom: clamp(3rem, 5vw, 6rem);
         color: #fff;
     }
-    #hero-82 .cs-button-solid {
+    #home .cs-button-solid {
         font-size: 1rem;
         line-height: 3.5rem;
         text-decoration: none;
@@ -423,7 +423,7 @@ h1,h2,h3,h4,h5,h6 {
         position: relative;
         z-index: 1;
     }
-    #hero-82 .cs-button-solid:before {
+    #home .cs-button-solid:before {
         content: "";
         position: absolute;
         display: block;
@@ -437,7 +437,7 @@ h1,h2,h3,h4,h5,h6 {
         border-radius: 0.25rem;
         transition: width 0.3s;
     }
-    #hero-82 .cs-button-solid:hover:before {
+    #home .cs-button-solid:hover:before {
         width: 100%;
     }
 }
@@ -582,7 +582,7 @@ h1,h2,h3,h4,h5,h6 {
         justify-content: flex-start;
         gap: 0.75rem;
     }
-    #hero-82 .cs-social-link {
+    #home .cs-social-link {
         width: 1.5rem;
         height: 1.5rem;
         background-color: var(--primary);
@@ -596,7 +596,7 @@ h1,h2,h3,h4,h5,h6 {
             transform 0.3s,
             background-color 0.3s;
     }
-    #hero-82 .cs-social-link:hover {
+    #home .cs-social-link:hover {
         background-color: var(--magpieBlue);
         transform: translateY(-0.1875rem);
     }
@@ -1015,10 +1015,10 @@ h1,h2,h3,h4,h5,h6 {
           opacity: 0;
       }
   }
-  #cs-contact-549 {
+  #inquiries {
       padding: var(--sectionPadding);
   }
-  #cs-contact-549 .cs-container {
+  #inquiries .cs-container {
       width: 100%;
       /* max-width: 80rem; */
       /* margin: 15% 0%; */
@@ -1028,7 +1028,7 @@ h1,h2,h3,h4,h5,h6 {
       /* 48px - 64px */
       gap: clamp(3rem, 6vw, 4rem);
   }
-  #cs-contact-549 .cs-content {
+  #inquiries .cs-content {
       /* set text aling to left if content needs to be left aligned */
       text-align: center;
       width: 100%;
@@ -1037,7 +1037,7 @@ h1,h2,h3,h4,h5,h6 {
       /* centers content horizontally, set to flex-start to left align */
       align-items: center;
   }
-  #cs-contact-549 .cs-topper {
+  #inquiries .cs-topper {
       font-size: var(--topperFontSize);
       line-height: 1.2em;
       text-transform: uppercase;
@@ -1048,7 +1048,7 @@ h1,h2,h3,h4,h5,h6 {
       margin-bottom: 0.25rem;
       display: block;
   }
-  #cs-contact-549 .cs-title {
+  #inquiries .cs-title {
       font-size: var(--headerFontSize);
       /* font-weight: 900; */
       line-height: 1.2em;
@@ -1059,7 +1059,7 @@ h1,h2,h3,h4,h5,h6 {
       color: var(--magpieBlue);
       position: relative;
   }
-  #cs-contact-549 .cs-text {
+  #inquiries .cs-text {
       font-size: var(--bodyFontSize);
       line-height: 1.5em;
       text-align: inherit;
@@ -1135,14 +1135,14 @@ h1,h2,h3,h4,h5,h6 {
         height: clamp(19.375rem, 43vw, 35.5rem);
     }
   }
-  #cs-contact-549 .cs-form {
+  #inquiries .cs-form {
       width: 100%;
       max-width: 66.5rem;
       display: flex;
       flex-direction: column;
       gap: 1.25rem;
   }
-  #cs-contact-549 .cs-label {
+  #inquiries .cs-label {
       /* 16px - 20px */
       /* font-size: clamp(1rem, 2vw, 1.25rem); */
       line-height: 1.5em;
@@ -1153,10 +1153,10 @@ h1,h2,h3,h4,h5,h6 {
       gap: 0.75rem;
       position: relative;
   }
-  #cs-contact-549 .cs-input,
-  #cs-contact-549 .cs-textarea,
-  #cs-contact-549 select,
-  #cs-contact-549 .cs-select {
+  #inquiries .cs-input,
+  #inquiries .cs-textarea,
+  #inquiries select,
+  #inquiries .cs-select {
       /* added options for the select tag in case you add it, that way it will also have the same styles, add the cs-select class for better specificity when targeting it */
       /* 16px - 20px */
       /* font-size: clamp(1rem, 2vw, 1.25rem); */
@@ -1176,26 +1176,26 @@ h1,h2,h3,h4,h5,h6 {
       transition: border-color 0.3s;
       border-radius: 4px;
   }
-  #cs-contact-549 .cs-input:hover,
-  #cs-contact-549 .cs-textarea:hover,
-  #cs-contact-549 select:hover,
-  #cs-contact-549 .cs-select:hover,
-  #cs-contact-549 .cs-input:focus,
-  #cs-contact-549 .cs-textarea:focus,
-  #cs-contact-549 select:focus,
-  #cs-contact-549 .cs-select:focus {
+  #inquiries .cs-input:hover,
+  #inquiries .cs-textarea:hover,
+  #inquiries select:hover,
+  #inquiries .cs-select:hover,
+  #inquiries .cs-input:focus,
+  #inquiries .cs-textarea:focus,
+  #inquiries select:focus,
+  #inquiries .cs-select:focus {
       /* focus has a black outline, we override it here */
       outline: none;
       border-color: var(--magpieBlue);
   }
-  #cs-contact-549 .cs-textarea {
+  #inquiries .cs-textarea {
       width: 100%;
       margin: 0;
       padding-top: 1rem;
       /* changes at tablet */
       min-height: 12.5rem;
   }
-  #cs-contact-549 .cs-icon {
+  #inquiries .cs-icon {
       width: 1.875rem;
       height: auto;
       position: absolute;
@@ -1205,7 +1205,7 @@ h1,h2,h3,h4,h5,h6 {
       bottom: 50%;
       transform: translateY(115%);
   }
-  #cs-contact-549 .cs-submit {
+  #inquiries .cs-submit {
       /* 20px - 25px */
       font-size: var(--topperFontSize);
       /* 56px - 84px */
@@ -1235,7 +1235,7 @@ h1,h2,h3,h4,h5,h6 {
       border-width: 2px;
       color: var(--magpieBlue);
   }
-  #cs-contact-549 .cs-submit:before {
+  #inquiries .cs-submit:before {
       content: "";
       position: absolute;
       height: 100%;
@@ -1248,28 +1248,28 @@ h1,h2,h3,h4,h5,h6 {
       border-radius: 50%;
       /* transition: 0.3s; */
   }
-  #cs-contact-549 .cs-submit:hover {
+  #inquiries .cs-submit:hover {
       color: var(--bodyTextColorWhite);
       cursor: pointer;
   }
-  #cs-contact-549 .cs-submit:hover:before {
+  #inquiries .cs-submit:hover:before {
       width: 100%;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #cs-contact-549 .cs-form {
+  #inquiries .cs-form {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
   }
-  #cs-contact-549 .cs-label {
+  #inquiries .cs-label {
       width: 48%;
   }
-  #cs-contact-549 .cs-textarea-label {
+  #inquiries .cs-textarea-label {
       width: 100%;
   }
-  #cs-contact-549 .cs-textarea {
+  #inquiries .cs-textarea {
       /* 280px - 358px */
       min-height: clamp(12rem, 16vw, 20rem);
   }
