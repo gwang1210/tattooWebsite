@@ -17,11 +17,15 @@
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
-    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
-    --subHeaderFontSize: clamp(1.5rem, 2vw, 3rem);
-    --bodyFontSize: 1rem;
+    --headerFontSize: clamp(2rem, 3.9vw, 3.0625rem);
+    --subHeaderFontSize: clamp(1.5rem, 2.2vw, 3rem);
+    --bodyFontSize: 1.25rem;
     /* 60px - 100px top and bottom */
-    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    --sectionPadding: clamp(10rem, 10vw, 12.25rem) 1rem clamp(1rem, 4vw, 6rem) 1rem;
+}
+
+#magpie-title {
+  padding-top: 30vh;
 }
 
 body {
@@ -30,10 +34,15 @@ body {
     font-family: "Manrope", sans-serif;
 }
 
+img {
+  border-radius: 4px;;
+}
+
 .magpie-dot {
   font-size: 120px !important;
   line-height: 45px !important;
   color: var(--magpieBlue) !important;
+  padding-bottom: 2rem;
 }
 
 *, *:before, *:after {
@@ -73,6 +82,7 @@ body {
   color: var(--headerColor);
   position: relative;
   margin: auto;
+  padding-top: 2rem;
 }
 
 .cs-text {
@@ -99,11 +109,33 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
 }
 /*-- -------------------------- -->
-<---           Artists          -->
+<---           artists-intro    -->
+<--- -------------------------- -*/
+#artists-intro {
+  text-align: center;
+  padding: var(--sectionPadding);
+}
+
+#artists-intro .cs-title {
+  max-width: inherit;
+  color: var(--magpieBlue);
+}
+#artists-intro .cs-text {
+  max-width: inherit;
+  color: var(--primary);
+}
+#artists-intro .cs-container-div {
+  width: 100%;
+  /* margin-top: 15%;
+  margin-bottom: 15%; */
+}
+
+/*-- -------------------------- -->
+<---           artists    -->
 <--- -------------------------- -*/
 #artists {
   text-align: center;
-  padding: clamp(2rem, 4vw, 18.75rem);
+  padding: var(--sectionPadding);
 }
 
 #artists .cs-title {
@@ -116,22 +148,23 @@ h1,h2,h3,h4,h5,h6 {
 }
 #artists .cs-container-div {
   width: 100%;
-  margin-top: 15%;
-  margin-bottom: 15%;
+  /* margin-top: 15%;
+  margin-bottom: 15%; */
 }
+
 /*-- -------------------------- -->
 <---          Gallery           -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #artists {
+  #artists-intro {
       padding: var(--sectionPadding);
       position: relative;
       /* Prevents overflow from the image going off screen */
       overflow: hidden;
   }
-  #artists .cs-container {
+  #artists-intro .cs-container {
       width: 100%;
       max-width: 69rem;
       margin: auto;
@@ -141,7 +174,7 @@ h1,h2,h3,h4,h5,h6 {
       /* 48px - 64px */
       gap: clamp(3rem, 6vw, 4rem);
   }
-  #artists .cs-content {
+  #artists-intro .cs-content {
       /* set text align to left if content needs to be left aligned */
       text-align: center;
       width: 100%;
@@ -151,7 +184,7 @@ h1,h2,h3,h4,h5,h6 {
       align-items: center;
   }
 
-  #artists .cs-image-group {
+  #artists-intro .cs-image-group {
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -159,7 +192,7 @@ h1,h2,h3,h4,h5,h6 {
       /* 16px - 20px */
       gap: clamp(1rem, 1.5vw, 1.25rem);
   }
-  #artists .cs-item {
+  #artists-intro .cs-item {
       width: 100%;
       /* height: 100%; */
       aspect-ratio: 1;
@@ -167,31 +200,31 @@ h1,h2,h3,h4,h5,h6 {
       position: relative;
       display: block;
   }
-  #artists .cs-item:hover .cs-hover-box {
+  #artists-intro .cs-item:hover .cs-hover-box {
       opacity: 1;
   }
-  #artists .cs-item:hover .cs-icon {
+  #artists-intro .cs-item:hover .cs-icon {
       /* return to original position */
       transform: rotateY(0);
   }
-  #artists .cs-item:hover .cs-h3 {
+  #artists-intro .cs-item:hover .cs-h3 {
       opacity: 1;
       /* Return to original position */
       transform: translateY(0);
   }
-  #artists .cs-item:hover .cs-hover-box-text {
+  #artists-intro .cs-item:hover .cs-hover-box-text {
       opacity: 1;
       /* Return to original position */
       transform: translateY(0);
   }
-  #artists .cs-picture {
+  #artists-intro .cs-picture {
       margin: auto;
       width: 100%;
       height: 100%;
       display: block;
       position: relative;
   }
-  #artists .cs-picture img {
+  #artists-intro .cs-picture img {
       position: absolute;
       top: 0;
       left: 0;
@@ -199,7 +232,7 @@ h1,h2,h3,h4,h5,h6 {
       width: 100%;
       object-fit: cover;
   }
-  #artists .cs-hover-box {
+  #artists-intro .cs-hover-box {
       text-align: center;
       width: 100%;
       height: 100%;
@@ -222,7 +255,7 @@ h1,h2,h3,h4,h5,h6 {
       pointer-events: none;
       transition: opacity 0.3s;
   }
-  #artists .cs-icon {
+  #artists-intro .cs-icon {
       /* 50px - 60px */
       width: clamp(3.125rem, 5vw, 3.75rem);
       height: clamp(3.125rem, 5vw, 3.75rem);
@@ -240,11 +273,11 @@ h1,h2,h3,h4,h5,h6 {
       flex: none;
       transition: transform 0.5s;
   }
-  #artists .cs-icon img {
+  #artists-intro .cs-icon img {
       width: 1.25rem;
       height: 1.25rem;
   }
-  #artists .cs-h3 {
+  #artists-intro .cs-h3 {
       /* 20px - 25px */
       font-size: clamp(1.25rem, 2vw, 1.5625rem);
       line-height: 1.2em;
@@ -261,7 +294,7 @@ h1,h2,h3,h4,h5,h6 {
           transform 0.3s ease-out;
       transition-delay: 0.1s;
   }
-  #artists .cs-hover-box-text {
+  #artists-intro .cs-hover-box-text {
       /* 13px - 16px */
       font-size: clamp(0.8125rem, 1vw, 1rem);
       line-height: 1.5em;
@@ -279,18 +312,18 @@ h1,h2,h3,h4,h5,h6 {
 }
 /* In Between - 600px */
 @media only screen and (min-width: 37.5rem) {
-  #artists .cs-image-group {
+  #artists-intro .cs-image-group {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: 1fr;
   }
-  #artists .cs-item {
+  #artists-intro .cs-item {
       grid-column: span 6;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #artists .cs-item {
+  #artists-intro .cs-item {
       grid-column: span 4;
   }
 }
@@ -307,11 +340,12 @@ h1,h2,h3,h4,h5,h6 {
         /* Centers button */
         text-align: center;
         /* 144px - 300px - leaving extra space for the navigation */
-        padding: clamp(9rem, 25.95vw, 18.75rem) 1rem 0;
+        /* padding: clamp(9rem, 25.95vw, 18.75rem) 1rem 0; */
         /* 130px - 200px */
-        padding-bottom: clamp(4.125rem, 8vw, 25em);
+        /* padding-bottom: clamp(4.125rem, 8vw, 25em); */
         position: relative;
         z-index: 1;
+        height: 100vh;
     }
     #hero-82 .cs-background {
         width: 100%;
@@ -352,7 +386,7 @@ h1,h2,h3,h4,h5,h6 {
     }
     #hero-82 .cs-title {
         /* 39px - 61px */
-        font-size: clamp(2.4375rem, 12vw, 10.8125rem);
+        font-size: clamp(5rem, 12vw, 10.8125rem);
         /* font-weight: 700; */
         line-height: 1.2em;
         text-align: center;
@@ -364,7 +398,7 @@ h1,h2,h3,h4,h5,h6 {
     }
     #hero-82 .cs-text {
         /* 16px - 25px */
-        font-size: clamp(1.2rem, 4vw, 3rem);
+        font-size: clamp(1.4rem, 4vw, 3rem);
         line-height: 1.5em;
         text-align: center;
         width: 100%;
@@ -372,7 +406,7 @@ h1,h2,h3,h4,h5,h6 {
         max-width: clamp(29rem, 60vw, 50rem);
         margin: 0 auto;
         /* 40px - 48px */
-        margin-bottom: clamp(2.5rem, 4vw, 3rem);
+        margin-bottom: clamp(3rem, 5vw, 6rem);
         color: #fff;
     }
     #hero-82 .cs-button-solid {
@@ -987,7 +1021,7 @@ h1,h2,h3,h4,h5,h6 {
   #cs-contact-549 .cs-container {
       width: 100%;
       /* max-width: 80rem; */
-      margin: 15% 0%;
+      /* margin: 15% 0%; */
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1140,6 +1174,7 @@ h1,h2,h3,h4,h5,h6 {
       display: block;
       position: relative;
       transition: border-color 0.3s;
+      border-radius: 4px;
   }
   #cs-contact-549 .cs-input:hover,
   #cs-contact-549 .cs-textarea:hover,
@@ -1185,15 +1220,20 @@ h1,h2,h3,h4,h5,h6 {
       /* 150px - 234px */
       /* min-width: clamp(9.374rem, 18vw, 14.625rem); */
       width: 90px;
-      padding: 0 1.5rem;
-      background-color: var(--magpieBlue);
+      height: 90px;
+      padding: 0;
+      background-color: var(--secondaryLight);
       border-radius: 50%;
       display: inline-block;
       position: relative;
       z-index: 1;
       /* prevents padding from adding to the width */
       box-sizing: border-box;
-      transition: color 2s;
+      transition: color 0.3s;
+      border-color: var(--magpieBlue);
+      border-style: solid;
+      border-width: 2px;
+      color: var(--magpieBlue);
   }
   #cs-contact-549 .cs-submit:before {
       content: "";
@@ -1209,7 +1249,7 @@ h1,h2,h3,h4,h5,h6 {
       /* transition: 0.3s; */
   }
   #cs-contact-549 .cs-submit:hover {
-      color: var(--primaryLight);
+      color: var(--bodyTextColorWhite);
       cursor: pointer;
   }
   #cs-contact-549 .cs-submit:hover:before {
@@ -1231,6 +1271,6 @@ h1,h2,h3,h4,h5,h6 {
   }
   #cs-contact-549 .cs-textarea {
       /* 280px - 358px */
-      min-height: clamp(17.5rem, 28vw, 22.375rem);
+      min-height: clamp(12rem, 16vw, 20rem);
   }
 }

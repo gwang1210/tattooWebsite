@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Magpie Ink Studio Chicago Fine Line Tattoo By Appointment Only"/>
+    <meta name="description" content="Magpie Ink Studio Chicago Fine Line Tattoo By Appointment Only Korean Woman Owned"/>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Magpie Ink Studio Tattoos By Appointment Only in Chicago</title>
+    <title>Magpie Ink Studio Fine Line Tattoos By Appointment Only in Chicago</title>
     <link rel="stylesheet" type="text/css" href="CSS/custom.css" media="screen">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
     <!-- <script src="script.js"></script> -->
@@ -97,16 +97,16 @@
             const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropdown'));
             for (const item of dropDowns) {
                 const onClick = () => {
-                    const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-active'));
-                    for (const itemB of dropDowns) {
+                    const dropDowns2 = Array.from(document.querySelectorAll('#cs-navigation .cs-active'));
+                    for (const itemB of dropDowns2) {
                         itemB.classList.toggle('cs-active');
                         console.log("test");
                     }
-                    item.classList.toggle('cs-active');
-                    CShamburgerMenu.classList.toggle('cs-active');
+                    // item.classList.toggle('cs-active');
+                    // CShamburgerMenu.classList.toggle('cs-active');
                     CSnavbarMenu.classList.toggle('cs-active');
                     CSbody.classList.toggle('cs-open');
-                    // run the function to check the aria-expanded value
+                    // // run the function to check the aria-expanded value
                     ariaExpanded();
                 };
                 item.addEventListener('click', onClick);
@@ -120,7 +120,7 @@
         <!-- ============================================ -->
         <section id="hero-82">
             <div class="cs-container">
-                <h1 class="cs-title">Magpie</h1>
+                <h1 id="magpie-title" class="cs-title">Magpie</h1>
                 <h2 class="cs-text">Chicago Tattoo Studio <br> Appointment Only</h2>
                 <a class="cs-social-link" aria-label="visit instagram profile" href="https://www.instagram.com/magpie.inkstudio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                     <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="36" height="36">
@@ -149,6 +149,8 @@
                 <p class="cs-text">Magpie’s talented artists can help your tattoo idea come to life. <br>
                     View our artists’ portfolios below to select the best artist for your tattoo.</p>
             </div>
+        </section>
+        <section id="artists-intro">
             <div class="cs-container-div">
                 <h2 class="cs-title">Magpie Artists</h2>
                 <div class="cs-container">
@@ -158,13 +160,13 @@
                             <a class="cs-item" href="https://www.instagram.com/seulgitart.ink">
                                 <picture class="cs-picture">
                                     <source media="(max-width: 600px)" srcset="Images/seulgee.JPG">
-                                    <source media="(min-width: 601px)" srcset="Images/seulgee.JPG">>
-                                    <img loading="lazy" decoding="async" src="Images/seulgee.JPG"> alt="fancy house" width="346" height="346">
+                                    <source media="(min-width: 601px)" srcset="Images/seulgee.JPG">
+                                    <img loading="lazy" decoding="async" src="Images/seulgee.JPG" alt="Seulgee Tattoo" width="346" height="346">
                                 </picture>
                                 <!-- Hover Box -->
                                 <div class="cs-hover-box">
                                     <picture class="cs-icon">
-                                        <img loading="lazy" decoding="async" src="Images/monogramBlack.svg" alt="fancy house" width="20" height="20" aria-hidden="true">
+                                        <img loading="lazy" decoding="async" src="Images/monogramBlack.svg" alt="magpie ink studio monogram" width="20" height="20" aria-hidden="true">
                                     </picture>
                                     <!-- <h3 class="cs-h3">Modern Architectual Design</h3> -->
                                     <p class="cs-hover-box-text">
@@ -180,14 +182,14 @@
                         <div class='cs-item'>
                             <a class="cs-item" href="https://www.instagram.com/oata_tattoos">
                                 <picture class="cs-picture">
-                                    <source media="(max-width: 600px)" srcset="Images/oata.JPG">>
-                                    <source media="(min-width: 601px)" srcset="Images/oata.JPG">">
-                                    <img loading="lazy" decoding="async" src="Images/oata.JPG"> alt="modern house" width="346" height="346">
+                                    <source media="(max-width: 600px)" srcset="Images/oata.JPG">
+                                    <source media="(min-width: 601px)" srcset="Images/oata.JPG">
+                                    <img loading="lazy" decoding="async" src="Images/oata.JPG" alt="Oata Tattoo" width="346" height="346">
                                 </picture>
                                 <!-- Hover Box -->
                                 <div class="cs-hover-box">
                                     <picture class="cs-icon">
-                                        <img loading="lazy" decoding="async" src="Images/monogramBlack.svg" alt="fancy house" width="20" height="20" aria-hidden="true">
+                                        <img loading="lazy" decoding="async" src="Images/monogramBlack.svg" alt="magpie ink studio monogram" width="20" height="20" aria-hidden="true">
                                     </picture>
                                     <!-- <h3 class="cs-h3">Modern Architectual Design</h3> -->
                                     <p class="cs-hover-box-text">
@@ -203,14 +205,14 @@
                         <div class='cs-item'>
                             <a class="cs-item" href="https://www.instagram.com/slxpxke/">
                                 <picture class="cs-picture">
-                                    <source media="(max-width: 600px)" srcset="Images/alli.JPG">>
-                                    <source media="(min-width: 601px)" srcset="Images/alli.JPG">>
-                                    <img aria-hidden="true" loading="lazy" decoding="async" src="Images/alli.JPG"> alt="modern home at night" width="346" height="346">
+                                    <source media="(max-width: 600px)" srcset="Images/alli.JPG">
+                                    <source media="(min-width: 601px)" srcset="Images/alli.JPG">
+                                    <img aria-hidden="true" loading="lazy" decoding="async" src="Images/alli.JPG" alt="Alli Tattoo" width="346" height="346">
                                 </picture>
                                 <!-- Hover Box -->
                                 <div class="cs-hover-box">
                                     <picture class="cs-icon">
-                                        <img loading="lazy" decoding="async" src="Images/monogramBlack.svg" alt="fancy house" width="20" height="20" aria-hidden="true">
+                                        <img loading="lazy" decoding="async" src="Images/monogramBlack.svg" alt="magpie ink studio monogram" width="20" height="20" aria-hidden="true">
                                     </picture>
                                     <!-- <h3 class="cs-h3">Modern Architectual Design</h3> -->
                                     <p class="cs-hover-box-text">
@@ -227,19 +229,12 @@
             </div>
         </section>
 
-        <section id="map">
+        <!-- <section id="map">
             <div class="cs-container">
-                <!-- <picture class="cs-background">
-                    Mobile Image
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/generic-map.png">
-                    Tablet and above Image
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/generic-map.png">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/generic-map.png" alt="appliance" width="1280" height="568" aria-hidden="true">
-                </picture> -->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11875.619480787205!2d-87.6863431!3d41.9164037!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd32dfc444283%3A0x9a2179e627fe1157!2sMagpie%20Ink%20Studio!5e0!3m2!1sen!2sus!4v1707689263324!5m2!1sen!2sus"
                 class= "cs-background" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </section>
+        </section> -->
         <!-- ============================================ -->
         <!--                 Contact Form                 -->
         <!-- ============================================ -->
@@ -250,7 +245,7 @@
                     <!-- <span class="cs-topper">Contact Us</span> -->
                     <h2 class="cs-title">Inquiries</h2>
                     <p class="cs-text">
-                        All Magpie artists own their booking process. Contact them directly for appointments. <br>
+                        All Magpie artists own their booking process. Contact them directly for appointments.
                         Please reach out below for all other inquiries including interest in guest spots.
                     </p>
                 </div>
@@ -259,29 +254,29 @@
                 <form class="cs-form" id="cs-form-549" name="Contact Form" method="post" action="https://formspree.io/f/mpzvdzzw">
                     <label class="cs-label">
                         Name
-                        <input class="cs-input" required type="text" id="name-549" name="name" placeholder="Name">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/person-gold.svg" alt="person icon" width="32" height="32">
+                        <input class="cs-input" required type="text" id="name-549" name="name" placeholder="Name" border-radius="4px">
+                        <!-- <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/person-gold.svg" alt="person icon" width="32" height="32"> -->
                     </label>
                     <label class="cs-label cs-email">
                         Email
                         <input class="cs-input" required type="text" id="email-549" name="email" placeholder="Email">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/mail-gold.svg" alt="mail icon" width="32" height="32">
+                        <!-- <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/mail-gold.svg" alt="mail icon" width="32" height="32"> -->
                     </label>
                     <label class="cs-label cs-phone">
                         Phone
                         <input class="cs-input" required type="text" id="phone-549" name="phone" placeholder="Phone">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/phone-golden.svg" alt="phone icon" width="32" height="32">
+                        <!-- <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/phone-golden.svg" alt="phone icon" width="32" height="32"> -->
                     </label>
                     <label class="cs-label cs-phone">
                         How did you hear about us?
                         <input class="cs-input" required type="text" id="phone-549" name="phone" placeholder="Google">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/refer.svg" alt="talking icon" width="32" height="32">
+                        <!-- <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/refer.svg" alt="talking icon" width="32" height="32"> -->
                     </label>
                     <label class="cs-label cs-textarea-label">
                         Message
                         <textarea class="cs-textarea" required name="Message" id="message-549" placeholder="Write message..."></textarea>
                     </label>
-                    <button class="cs-submit" type="submit">Send</button>
+                    <button class="cs-submit" type="submit">SEND</button>
                 </form>
                 <!--Swap the image out for a screenshot of the Google Map location for your client, or you can add the embedded iframe from google and add the cs-background class to it and it should work, remove the animated dots in the CSS if you do that-->
                 <!-- <picture class="cs-background">
@@ -303,7 +298,7 @@
                 <!-- Logo Group -->
                 <div class="cs-logo-group">
                     <a aria-label="go back to home" class="cs-logo" href="">
-                        <img class="cs-logo-img light" aria-hidden="true" loading="lazy" decoding="async" src="Images/monogramWhite.svg" alt="logo" width="60" height="60">
+                        <img class="cs-logo-img light" aria-hidden="true" loading="lazy" decoding="async" src="Images/Monogram-White-Background.svg" alt="logo" width="60" height="60">
                     </a>
                     <a class="cs-contact-link" href="https://maps.app.goo.gl/1gzuV3XRDLJU2ipn6">1913 N Milwaukee Ave, Chicago, IL</a>
                     <p class="cs-text">&copy; 2024 Magpie Ink Studio</p>
