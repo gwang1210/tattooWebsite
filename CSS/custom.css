@@ -296,7 +296,7 @@ h1,h2,h3,h4,h5,h6 {
   }
   #artists-intro .cs-hover-box-text {
       /* 13px - 16px */
-      font-size: clamp(0.8125rem, 1vw, 1rem);
+      font-size: var(--bodyFontSize);
       line-height: 1.5em;
       margin: 0 auto;
       max-width: 16.875rem;
@@ -1170,7 +1170,7 @@ h1,h2,h3,h4,h5,h6 {
       background-color: #f1f1f4;
       /* prevents border and padding from affecting height and width */
       box-sizing: border-box;
-      border: 3px solid transparent;
+      border: 2px solid transparent;
       display: block;
       position: relative;
       transition: border-color 0.3s;
