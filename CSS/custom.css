@@ -25,6 +25,11 @@
     --sectionPadding: clamp(10rem, 10vw, 12.25rem) 1rem clamp(1rem, 4vw, 6rem) 1rem;
 }
 
+#hero-video {
+  width: 100%;
+  object-fit: cover;
+}
+
 #magpie-title {
   padding-top: 30vh;
 }
@@ -43,6 +48,12 @@ body {
 
 img {
   border-radius: 4px;;
+}
+
+.full-bleed {
+  max-height: 60vh;
+  width: 100vw;
+  object-fit: cover;
 }
 
 .magpie-dot {

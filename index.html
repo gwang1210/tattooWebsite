@@ -63,7 +63,7 @@
                             </li>
                             <li class="cs-li">
                                 <a href="#inquiries" class="cs-li-link cs-dropdown">
-                                    Inquiries
+                                    Join Us
                                 </a>
                             </li>
                             <!-- <li class="cs-li">
@@ -145,11 +145,20 @@
             </div>
 
             <!-- Background Image -->
-            <picture class="cs-background">
+            <!-- <picture class="cs-background">
                 <source media="(max-width: 600px)" srcset="Images/magpie.JPG">
                 <source media="(min-width: 601px)" srcset="Images/magpie.JPG">
                 <img loading="lazy" decoding="async" src="Images/magpie.JPG" alt="Magpie Chicago Tattoo Studio" width="2250" height="1500" aria-hidden="true">
-            </picture>
+            </picture> -->
+
+            <video id="hero-video" class="cs-background" autoplay muted loop>
+                <!-- <source media="(max-width: 600px)" srcset="Images/magpie.JPG">
+                <source media="(min-width: 601px)" srcset="Images/magpie.JPG">
+                <img loading="lazy" decoding="async" src="Images/magpie.JPG" alt="Magpie Chicago Tattoo Studio" width="2250" height="1500" aria-hidden="true"> -->
+                <source src="Images/testVideo.mp4" type="video/mp4">
+            </video>
+
+
         </section>
 
 
@@ -164,6 +173,7 @@
             <div class="cs-container-div">
                 <h2 class="cs-title">Our artists are what makes us, us.</h2>
                 <p class="cs-text">Bring your tattoo vision to life. <br> View our artist portfolios below to select the best artist for your tattoo.</p>
+                <p class="cs-text"><br>All Magpie artists own their booking process. <br><span class="cs-text-bold">Contact artists directly for appointments.</span></p>
             </div>
         </section>
         <section id="artists-intro">
@@ -245,48 +255,73 @@
             </div>
         </section>
 
-        <!-- <section id="map">
+        <!-- ============================================ -->
+        <!--                 Image                        -->
+        <!-- ============================================ -->
+        <section class="image">
             <div class="cs-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11875.619480787205!2d-87.6863431!3d41.9164037!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd32dfc444283%3A0x9a2179e627fe1157!2sMagpie%20Ink%20Studio!5e0!3m2!1sen!2sus!4v1707689263324!5m2!1sen!2sus"
-                class= "cs-background" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="cs-content">
+                    <img class="full-bleed" src="Images/magpie.JPG">
+                </div>
             </div>
-        </section> -->
-        <!-- ============================================ -->
-        <!--                 Contact Form                 -->
-        <!-- ============================================ -->
+        </section>
 
+        <!-- ============================================ -->
+        <!--                 Work at Magpie               -->
+        <!-- ============================================ -->
         <section id="inquiries">
             <div class="cs-container">
                 <div class="cs-content">
-                    <!-- <span class="cs-topper">Contact Us</span> -->
+                    <!-- <picture class="cs-background">
+                        <source media="(max-width: 600px)" srcset="Images/magpie.JPG">
+                        <source media="(min-width: 601px)" srcset="Images/magpie.JPG">
+                        <img loading="lazy" decoding="async" src="Images/magpie.JPG" alt="Magpie Chicago Tattoo Studio" width="2250" height="1500" aria-hidden="true"> -->
+                    <!-- <img src="Images/magpie.JPG"> -->
+                    <h2 class="cs-title">Work at Magpie</h2>
+                    <p class="cs-text">
+                        Magpie is looking for <span class="cs-text-bold">resident or guest artists</span> to join our private studio.
+                        We prefer artists with a strong portfolio, a minimum of 1 year of experience, and the ability to manage their own clientele.
+                        <br><br>
+                        Our studio offers a flexible schedule, a <span class="cs-text-bold">flat monthly rental rate</span>, standard basic supplies, and more!
+                        <br><br>
+                        If you think you would be a good fit, <span class="cs-text-bold">apply via the Google Form below</span>. We are excited to work with you!
+                    </p>
+                    <form action="https://forms.gle/moVHoPgbzsZsG4ih9">
+                        <button class="cs-submit" type="submit">APPLY</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================================ -->
+        <!--                 Contact Form                 -->
+        <!-- ============================================ -->
+        <!-- <section id="inquiries">
+            <div class="cs-container">
+                <div class="cs-content">
                     <h2 class="cs-title">Inquiries</h2>
                     <p class="cs-text">
                         All Magpie artists own their booking process. <span class="cs-text-bold">Contact artists directly for appointments.</span>
                         Please reach out below for all other inquiries including interest in guest spots.
                     </p>
                 </div>
-
-                <!--Form-->
                 <form class="cs-form" id="cs-form-549" name="Contact Form" method="post" action="https://formspree.io/f/mpzvdzzw">
                     <label class="cs-label">
                         Name
                         <input class="cs-input" required type="text" id="name-549" name="name" placeholder="Name" border-radius="4px">
-                        <!-- <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/person-gold.svg" alt="person icon" width="32" height="32"> -->
                     </label>
                     <label class="cs-label cs-email">
                         Email
                         <input class="cs-input" required type="text" id="email-549" name="email" placeholder="Email">
-                        <!-- <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/mail-gold.svg" alt="mail icon" width="32" height="32"> -->
                     </label>
                     <label class="cs-label cs-phone">
                         Phone
                         <input class="cs-input" required type="text" id="phone-549" name="phone" placeholder="Phone">
-                        <!-- <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/phone-golden.svg" alt="phone icon" width="32" height="32"> -->
                     </label>
                     <label class="cs-label cs-phone">
                         How did you hear about us?
                         <input class="cs-input" required type="text" id="phone-549" name="phone" placeholder="Google">
-                        <!-- <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/refer.svg" alt="talking icon" width="32" height="32"> -->
                     </label>
                     <label class="cs-label cs-textarea-label">
                         Message
@@ -294,21 +329,12 @@
                     </label>
                     <button class="cs-submit" type="submit">SEND</button>
                 </form>
-                <!--Swap the image out for a screenshot of the Google Map location for your client, or you can add the embedded iframe from google and add the cs-background class to it and it should work, remove the animated dots in the CSS if you do that-->
-                <!-- <picture class="cs-background">
-                    Mobile Image
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/generic-map.png">
-                    Tablet and above Image
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/generic-map.png">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Contact-Page/generic-map.png" alt="appliance" width="1280" height="568" aria-hidden="true">
-                </picture> -->
             </div>
-        </section>
+        </section> -->
 
         <!-- ============================================ -->
         <!--                   Footer                     -->
         <!-- ============================================ -->
-
         <footer id="cs-footer-269">
             <div class="cs-container">
                 <!-- Logo Group -->
@@ -319,47 +345,6 @@
                     <a class="cs-contact-link" href="https://maps.app.goo.gl/1gzuV3XRDLJU2ipn6">1913 N Milwaukee Ave, Chicago, IL</a>
                     <p class="cs-text">&copy; 2024 Magpie Ink Studio</p>
                 </div>
-                <!-- Links -->
-                <!-- <ul class="cs-nav">
-                    <li class="cs-nav-li">
-                        <span class="cs-header">Sitemap</span>
-                    </li>
-                    <li class="cs-nav-li">
-                        <a class="cs-nav-link" href="">Home</a>
-                    </li>
-                    <li class="cs-nav-li">
-                        <a class="cs-nav-link" href="">Artists</a>
-                    </li>
-                    <li class="cs-nav-li">
-                        <a class="cs-nav-link" href="">Inquiries</a>
-                    </li>
-                </ul> -->
-                <!-- Contact Info -->
-                <!-- <ul class="cs-contact"> -->
-                    <!-- <li class="cs-nav-li">
-                        <span class="cs-header">Address</span>
-                    </li> -->
-                    <!-- <li class="cs-contact-li">
-                        <a class="cs-contact-link" href="https://maps.app.goo.gl/1gzuV3XRDLJU2ipn6">1913 N Milwaukee Ave, Chicago, IL</a>
-                    </li> -->
-                    <!-- Social Media -->
-                    <!-- <li class="cs-contact-li cs-social-group">
-                        <div class="cs-social">
-                            <a class="cs-social-link" aria-label="visit google profile" href="">
-                                <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
-                            </a>
-                            <a class="cs-social-link" aria-label="visit facebook profile" href="">
-                                <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
-                            </a>
-                            <a class="cs-social-link" aria-label="visit instagram profile" href="">
-                                <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
-                            </a>
-                        </div>
-                    </li> -->
-                    <!-- <li class="cs-contact-li">
-                        <p class="cs-text">&copy; 2024 Magpie Ink Studio</p>
-                    </li> -->
-                <!-- </ul> -->
             </div>
         </footer>
     </body>
