@@ -408,7 +408,7 @@ h1,h2,h3,h4,h5,h6 {
     }
     #home .cs-title {
         /* 39px - 61px */
-        font-size: clamp(7rem, 18vw, 15rem);
+        font-size: clamp(6rem, 18vw, 15rem);
         /* font-weight: 700; */
         line-height: 1.2em;
         text-align: center;
