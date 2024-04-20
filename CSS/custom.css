@@ -68,6 +68,10 @@ img {
   padding-bottom: 2rem;
 }
 
+#logo-group a {
+  text-decoration: none; /* no underline */
+}
+
 *, *:before, *:after {
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
