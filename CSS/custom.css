@@ -420,7 +420,7 @@ h1,h2,h3,h4,h5,h6 {
     }
     #home .cs-text {
         /* 16px - 25px */
-        font-size: clamp(1.55rem, 4vw, 3rem);
+        font-size: clamp(1.2rem, 4vw, 3rem);
         line-height: 1.5em;
         text-align: center;
         width: 100%;
