@@ -34,6 +34,10 @@
   padding-top: 30vh;
 }
 
+#magpie-subtitle {
+  padding-top: 6vh;
+}
+
 .cs-text-bold{
   font-weight:700;
   /* font-family: 'Ogg'; */
@@ -404,7 +408,7 @@ h1,h2,h3,h4,h5,h6 {
     }
     #home .cs-title {
         /* 39px - 61px */
-        font-size: clamp(5rem, 12vw, 10.8125rem);
+        font-size: clamp(6rem, 18vw, 15rem);
         /* font-weight: 700; */
         line-height: 1.2em;
         text-align: center;
