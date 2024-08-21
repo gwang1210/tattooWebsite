@@ -263,7 +263,7 @@ h1,h2,h3,h4,h5,h6 {
       width: 100%;
       height: 100%;
       padding: 1em;
-      background-color:hsla(234, 100%, 36%,0.7);
+      background-color:hsla(234, 100%, 36%,.7);
       opacity: 0;
       position: absolute;
       display: flex;
