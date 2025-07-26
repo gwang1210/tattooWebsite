@@ -37,6 +37,7 @@
 #magpie-subtitle {
   padding-top: 4vh;
   font-family: "Manrope", sans-serif;
+  letter-spacing: .06em;
 }
 
 .cs-text-bold{
@@ -324,6 +325,7 @@ h1,h2,h3,h4,h5,h6 {
       /* 13px - 16px */
       font-size: var(--bodyFontSize);
       line-height: 1.5em;
+      letter-spacing: 0.06em;
       margin: 0 auto;
       max-width: 16.875rem;
       color: #fff;
@@ -1260,6 +1262,7 @@ h1,h2,h3,h4,h5,h6 {
       border-style: solid;
       border-width: 2px;
       color: var(--magpieBlue);
+      letter-spacing: 0.06em;
   }
   #inquiries .cs-submit:before {
       content: "";
