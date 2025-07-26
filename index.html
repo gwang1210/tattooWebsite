@@ -322,7 +322,7 @@
                         <img class="cs-logo-img light" aria-hidden="true" loading="lazy" decoding="async" src="Images/Monogram-White-Background.svg" alt="logo">
                     </a>
                     <a class="cs-contact-link" href="https://maps.app.goo.gl/1gzuV3XRDLJU2ipn6">1913 N Milwaukee Ave, Chicago, IL</a>
-                    <p class="cs-text">&copy; 2024 Magpie Ink Studio</p>
+                    <p class="cs-text">&copy; <span id="year"></span> Magpie Ink Studio</p>
                 </div>
                 <div id="logo-group">
                     <a class="cs-item" target=”_blank” aria-label="visit Magpie instagram" href="https://www.instagram.com/magpie.inkstudio">
@@ -332,6 +332,9 @@
                         <img id="ig-icon" src="Images/icon-location.svg" alt="Google Maps" width="24" height="24">
                     </a>
                     <!-- FONT AWESOME -->
+                    <script>
+                        document.getElementById("year").textContent = new Date().getFullYear();
+                      </script>
                 </div>
             </div>
         </footer>
